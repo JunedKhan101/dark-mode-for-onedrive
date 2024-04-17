@@ -1,9 +1,33 @@
-#appRoot > .dark-theme {
+#appRoot>.dark-theme {
     background: #00172A;
 }
-#appRoot span, #appRoot p, #appRoot i, #appRoot b, #apRoot {
+#appRoot>.light-theme {
+    background: initial;
+}
+
+#appRoot>.dark-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal),
+#appRoot>.dark-theme p,
+#appRoot>.dark-theme i:not([data-icon-name]),
+#appRoot>.dark-theme b
+#appRoot>.dark-theme h1
+#appRoot>.dark-theme h2
+#appRoot>.dark-theme h3
+#appRoot> .dark-theme div[class^='totalQuotaText_']  {
     color: #eee;
 }
-#appRoot > .light-theme {
-    background: initial;
+#appRoot>.dark-theme a {
+    color: lightblue;
+}
+#appRoot>.light-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal),
+#appRoot>.light-theme p,
+#appRoot>.light-theme i:not([data-icon-name]),
+#appRoot>.light-theme b
+#appRoot>.light-theme h1
+#appRoot>.light-theme h2
+#appRoot>.light-theme h3
+#appRoot> .dark-theme div[class^='totalQuotaText_']  {
+    color: unset;
+}
+#appRoot> .light-theme a {
+    color: unset;
 }
