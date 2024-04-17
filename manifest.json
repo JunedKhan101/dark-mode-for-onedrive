@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "OneDrive Dark Mode",
+    "version": "1.0",
+    "description": "Enable dark mode for OneDrive site",
+    "permissions": [
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "static/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://onedrive.live.com/*"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ]
+}

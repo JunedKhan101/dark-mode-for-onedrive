@@ -1,0 +1,9 @@
+#appRoot > .dark-theme {
+    background: #00172A;
+}
+#appRoot span, #appRoot p, #appRoot i, #appRoot b, #apRoot {
+    color: #eee;
+}
+#appRoot > .light-theme {
+    background: initial;
+}
