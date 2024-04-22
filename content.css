@@ -8,24 +8,24 @@
 #appRoot>.dark-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal),
 #appRoot>.dark-theme p,
 #appRoot>.dark-theme i:not([data-icon-name]),
-#appRoot>.dark-theme b
-#appRoot>.dark-theme h1
-#appRoot>.dark-theme h2
-#appRoot>.dark-theme h3
-#appRoot> .dark-theme div[class^='totalQuotaText_']  {
+#appRoot>.dark-theme b,
+#appRoot>.dark-theme h1,
+#appRoot>.dark-theme h2,
+#appRoot>.dark-theme h3,
+#appRoot>.dark-theme div[class^='totalQuotaText_'] {
     color: #eee;
 }
 #appRoot>.dark-theme a {
     color: lightblue;
 }
-#appRoot>.light-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal),
+#appRoot>.light-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal):not(span[class^="itemActivity_"]),
 #appRoot>.light-theme p,
 #appRoot>.light-theme i:not([data-icon-name]),
-#appRoot>.light-theme b
-#appRoot>.light-theme h1
-#appRoot>.light-theme h2
-#appRoot>.light-theme h3
-#appRoot> .dark-theme div[class^='totalQuotaText_']  {
+#appRoot>.light-theme b,
+#appRoot>.light-theme h1,
+#appRoot>.light-theme h2,
+#appRoot>.light-theme h3,
+#appRoot>.light-theme div[class^='totalQuotaText_'] {
     color: unset;
 }
 #appRoot> .light-theme a {

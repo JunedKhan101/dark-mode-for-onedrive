@@ -4,7 +4,8 @@
     "version": "1.0",
     "description": "Enable dark mode for OneDrive site",
     "permissions": [
-        "activeTab"
+        "tabs",
+        "storage"
     ],
     "action": {
         "default_popup": "popup.html",

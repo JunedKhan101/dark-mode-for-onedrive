@@ -1,6 +1,4 @@
-// content.js
 function toggleDarkMode() {
-    // var appRoot = document.getElementById("appRoot");
     var root = appRoot.querySelector('#appRoot > div[data-automationid="main-app-container"]');
     if (root.hasAttribute("data-theme")) {
         var currentTheme = root.getAttribute('data-theme');
@@ -28,11 +26,3 @@ function applyStylesToElement() {
         element.classList.add("light-theme");
     }
 }
-// MutationObserver to watch for changes in the DOM
-// var observer = new MutationObserver(function(mutationsList, observer) {
-//     for(var mutation of mutationsList) {
-//         if (mutation.attributeName) // we'll assume it's "style"
-//             parseNode(mutation.target);
-//     }
-// });
-// observer.observe(document.documentElement, { attributes: true, attributeFilter: ["style"] });
