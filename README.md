@@ -1,2 +1,9 @@
 # dark-mode-for-onedrive
-Chrome extension to toggle dark mode for OneDrive
+
+<p align="center">
+    <img width="300" height="auto" src="./static/icon.png" />
+</p>
+<p align="center">
+    Chrome extension to toggle dark mode for OneDrive<br />
+    Currently in development
+</p>
