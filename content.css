@@ -1,10 +1,30 @@
 #appRoot>.dark-theme {
-    background: #00172A;
+    background: #242526;
 }
 #appRoot>.light-theme {
     background: initial;
 }
-
+/* search form */
+#appRoot>.dark-theme .ms-suiteux-search-box, #appRoot>.dark-theme button[class^="submitSearchButton"] {
+    background-color: #1B1B1D;
+}
+/* search input */
+#appRoot>.dark-theme input[id^="ms-searchux-input"] {
+    color: #EFF0F1;
+    caret-color: #EFF0F1;
+}
+/* search suggestion popup */
+#appRoot>.dark-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"] {
+    background-color: #1B1B1D;
+    color: #EFF0F1;
+}
+#appRoot>.dark-theme svg {
+    filter: invert(100%);
+}
+/* don't apply filter to submit search button svg */
+#appRoot>.dark-theme button[class^="submitSearchButton"] svg {
+    filter: unset;
+}
 #appRoot>.dark-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal),
 #appRoot>.dark-theme p,
 #appRoot>.dark-theme i:not([data-icon-name]),
@@ -15,10 +35,21 @@
 #appRoot>.dark-theme div[class^='totalQuotaText_'] {
     color: #eee;
 }
+#appRoot>.dark-theme input[id^="ms-searchux-input"] {
+    background-color: #1B1B1D;
+    border-radius: 16px;
+}
+#appRoot>.dark-theme button[class^="magnifierButton"] {
+    background-color: #1B1B1D;
+    border-radius: 16px;
+}
+#appRoot>.dark-theme input[id^="ms-searchux-input"]::placeholder {
+    color: #EFF0F1;
+}
 #appRoot>.dark-theme a {
     color: lightblue;
 }
-#appRoot>.light-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal):not(span[class^="itemActivity_"]),
+#appRoot>.light-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal):not(span[class^="itemActivity"]),
 #appRoot>.light-theme p,
 #appRoot>.light-theme i:not([data-icon-name]),
 #appRoot>.light-theme b,
@@ -29,5 +60,29 @@
     color: unset;
 }
 #appRoot> .light-theme a {
+    color: unset;
+}
+#appRoot>.light-theme input[id^="ms-searchux-input"]::placeholder {
+    color: unset;
+}
+#appRoot>.light-theme button[class^="magnifierButton"] {
+    background-color: unset;
+    color: unset;
+    border-radius: unset;
+}
+#appRoot>.light-theme svg {
+    filter: unset;
+}
+#appRoot>.light-theme .ms-suiteux-search-box, #appRoot>.dark-theme button[class^="submitSearchButton"] {
+    background-color: unset;
+}
+#appRoot>.light-theme input[id^="ms-searchux-input"] {
+    color: unset;
+    caret-color: unset;
+    background-color: unset;
+    border-radius: unset;
+}
+#appRoot>.light-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"] {
+    background-color: unset;
     color: unset;
 }
