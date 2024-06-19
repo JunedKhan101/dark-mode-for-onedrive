@@ -1,9 +1,6 @@
 #appRoot>.dark-theme {
     background: #242526;
 }
-#appRoot>.light-theme {
-    background: initial;
-}
 /* search form */
 #appRoot>.dark-theme .ms-suiteux-search-box, #appRoot>.dark-theme button[class^="submitSearchButton"] {
     background-color: #1B1B1D;
@@ -60,7 +57,27 @@
 #appRoot>.dark-theme [class^='icon_'] svg {
     filter: invert(0%);
 }
+#appRoot>.dark-theme [class^='navLink_']:hover [class^='navLinkInner_'] {
+    background-color: #161617;
+    color: #EEE;
+}
+#appRoot>.dark-theme button.ms-Button:hover {
+    background-color: #161617;
+}
+#appRoot>.dark-theme button.ms-Button:hover i {
+    color: #EEE;
+}
+/* #appRoot>.dark-theme ~ #fluent-default-layer-host button.ms-ContextualMenu-link,
+#appRoot>.dark-theme ~ #fluent-default-layer-host li.ms-ContextualMenu-item,
+#appRoot>.dark-theme ~ #fluent-default-layer-host .ms-ContextualMenu-list.is-open,
+#appRoot>.dark-theme ~ #fluent-default-layer-host .ms-Callout-main,
+#appRoot>.dark-theme ~ #fluent-default-layer-host .ms-Callout.ms-ContextualMenu-Callout {
+    background-color: #1d1d1e;
+} */
 /* === light theme css === */
+#appRoot>.light-theme {
+    background: initial;
+}
 #appRoot>.light-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal):not(span[class^="itemActivity"]),
 #appRoot>.light-theme p,
 #appRoot>.light-theme i:not([data-icon-name]),
