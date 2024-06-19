@@ -14,9 +14,13 @@
     caret-color: #EFF0F1;
 }
 /* search suggestion popup */
-#appRoot>.dark-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"] {
+#appRoot>.dark-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"], #appRoot>.dark-theme div[id^="ms-searchux-popup"] {
     background-color: #1B1B1D;
     color: #EFF0F1;
+}
+/* search suggestion popup */
+#appRoot>.dark-theme div[class^="suggestionContainer"] {
+    background-color: #1B1B1D;
 }
 #appRoot>.dark-theme svg {
     filter: invert(100%);
@@ -37,7 +41,8 @@
 }
 #appRoot>.dark-theme input[id^="ms-searchux-input"] {
     background-color: #1B1B1D;
-    border-radius: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 #appRoot>.dark-theme button[class^="magnifierButton"] {
     background-color: #1B1B1D;
@@ -49,6 +54,13 @@
 #appRoot>.dark-theme a {
     color: lightblue;
 }
+#appRoot>.dark-theme [class^='quotaBarHeader_'] {
+    color: #EFF0F1;
+}
+#appRoot>.dark-theme [class^='icon_'] svg {
+    filter: invert(0%);
+}
+/* === light theme css === */
 #appRoot>.light-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal):not(span[class^="itemActivity"]),
 #appRoot>.light-theme p,
 #appRoot>.light-theme i:not([data-icon-name]),
@@ -85,4 +97,7 @@
 #appRoot>.light-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"] {
     background-color: unset;
     color: unset;
+}
+#appRoot>.light-theme div[class^="suggestionContainer"] {
+    background-color: unset;
 }
