@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("isChecked: ", isChecked);
         toggleButton.checked = isChecked;
         chrome.storage.local.set({ darkModeStatus: isChecked });
-        chrome.tabs.query({ url: "https://onedrive.live.com/*" }, (tabs) => {
+        chrome.tabs.query({ url: ["https://onedrive.live.com/*", "https://photos.onedrive.com/*"]}, tabs => {
             tabs.forEach((tab) => {
                 chrome.tabs.sendMessage(tab.id, { darkModeStatus: isChecked });
             });

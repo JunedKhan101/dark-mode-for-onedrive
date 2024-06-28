@@ -6,14 +6,16 @@ function applyDarkMode(darkModeEnabled) {
     }
     var root = appRoot.querySelector('div[data-automationid="main-app-container"]');
     if (!root) {
-        console.error("Main app container not found");
+        console.error("App container not found");
         return;
     }
     if (darkModeEnabled) {
         root.setAttribute("data-theme", "dark");
+        appRoot.setAttribute("data-theme", "dark");
         applyStylesToElement(root, "dark");
     } else {
         root.setAttribute("data-theme", "light");
+        appRoot.setAttribute("data-theme", "light");
         applyStylesToElement(root, "light");
     }
     chrome.storage.local.set({ darkModeStatus: darkModeEnabled });

@@ -2,7 +2,8 @@
     background: #242526;
 }
 /* search form */
-#appRoot>.dark-theme .ms-suiteux-search-box, #appRoot>.dark-theme button[class^="submitSearchButton"] {
+#appRoot>.dark-theme .ms-suiteux-search-box, 
+#appRoot>.dark-theme button[class^="submitSearchButton"] {
     background-color: #1B1B1D;
 }
 /* search input */
@@ -11,7 +12,8 @@
     caret-color: #EFF0F1;
 }
 /* search suggestion popup */
-#appRoot>.dark-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"], #appRoot>.dark-theme div[id^="ms-searchux-popup"] {
+#appRoot>.dark-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"], 
+#appRoot>.dark-theme div[id^="ms-searchux-popup"] {
     background-color: #1B1B1D;
     color: #EFF0F1;
 }
@@ -58,22 +60,35 @@
     filter: invert(0%);
 }
 #appRoot>.dark-theme [class^='navLink_']:hover [class^='navLinkInner_'] {
-    background-color: #161617;
+    background-color: #1B1B1D;
     color: #EEE;
 }
 #appRoot>.dark-theme button.ms-Button:hover {
-    background-color: #161617;
-}
-#appRoot>.dark-theme button.ms-Button:hover i {
+    background-color: #1B1B1D;
     color: #EEE;
 }
-/* #appRoot>.dark-theme ~ #fluent-default-layer-host button.ms-ContextualMenu-link,
-#appRoot>.dark-theme ~ #fluent-default-layer-host li.ms-ContextualMenu-item,
-#appRoot>.dark-theme ~ #fluent-default-layer-host .ms-ContextualMenu-list.is-open,
-#appRoot>.dark-theme ~ #fluent-default-layer-host .ms-Callout-main,
-#appRoot>.dark-theme ~ #fluent-default-layer-host .ms-Callout.ms-ContextualMenu-Callout {
+#appRoot>.dark-theme button.ms-Button i.ms-Icon.ms-Button-menuIcon,
+#appRoot>.dark-theme button.ms-Button:hover i.ms-Icon.ms-Button-menuIcon {
+    color: #EEE;
+}
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link,
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer li.ms-ContextualMenu-item,
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer .ms-ContextualMenu-list.is-open,
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer .ms-Callout-main,
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer .ms-Callout.ms-ContextualMenu-Callout {
     background-color: #1d1d1e;
-} */
+}
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link {
+    color: #EEE;
+}
+/* below css not working, currently debugging the issue */
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link:hover {
+    color: #cfcdcd !important;
+}
+ #appRoot>.dark-theme .ms-FocusZone.ms-CommandBar,
+ #appRoot>.dark-theme .ms-OverflowSet.ms-CommandBar-primaryCommand {
+    background-color: #242526 !important;
+ }
 /* === light theme css === */
 #appRoot>.light-theme {
     background: initial;
@@ -102,7 +117,8 @@
 #appRoot>.light-theme svg {
     filter: unset;
 }
-#appRoot>.light-theme .ms-suiteux-search-box, #appRoot>.dark-theme button[class^="submitSearchButton"] {
+#appRoot>.light-theme .ms-suiteux-search-box,
+#appRoot>.dark-theme button[class^="submitSearchButton"] {
     background-color: unset;
 }
 #appRoot>.light-theme input[id^="ms-searchux-input"] {
