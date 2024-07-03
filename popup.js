@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var darkModeStatus = data.darkModeStatus;
         toggleButton.checked = darkModeStatus === true;
     });
-    toggleButton.addEventListener('change', function(event) {
+    toggleButton.addEventListener('change', (event) => {
         var isChecked = event.target.checked;
         console.log("isChecked: ", isChecked);
         toggleButton.checked = isChecked;

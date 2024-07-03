@@ -78,17 +78,24 @@
 #appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer .ms-Callout.ms-ContextualMenu-Callout {
     background-color: #1d1d1e;
 }
-#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link {
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link,
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer .ms-ContextualMenu-icon,
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer .ms-ContextualMenu-checkmarkIcon {
     color: #EEE;
 }
-/* below css not working, currently debugging the issue */
-#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link:hover {
-    color: #cfcdcd !important;
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link:hover .ms-ContextualMenu-icon:hover {
+    color: #133F9E;
 }
- #appRoot>.dark-theme .ms-FocusZone.ms-CommandBar,
- #appRoot>.dark-theme .ms-OverflowSet.ms-CommandBar-primaryCommand {
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link:hover {
+    background-color: #505151 !important;
+}
+#appRoot[data-theme="dark"] ~ #fluent-default-layer-host > .ms-Layer button.ms-ContextualMenu-link:hover .ms-ContextualMenu-linkContent .ms-ContextualMenu-itemText {
+    color: #cdcdcd;
+}
+#appRoot>.dark-theme .ms-FocusZone.ms-CommandBar,
+#appRoot>.dark-theme .ms-OverflowSet.ms-CommandBar-primaryCommand {
     background-color: #242526 !important;
- }
+}
 /* === light theme css === */
 #appRoot>.light-theme {
     background: initial;
