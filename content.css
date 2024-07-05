@@ -2,7 +2,7 @@
     background: #242526;
 }
 /* search form */
-#appRoot>.dark-theme .ms-suiteux-search-box, 
+#appRoot>.dark-theme .ms-suiteux-search-box,
 #appRoot>.dark-theme button[class^="submitSearchButton"] {
     background-color: #1B1B1D;
 }
@@ -12,7 +12,7 @@
     caret-color: #EFF0F1;
 }
 /* search suggestion popup */
-#appRoot>.dark-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"], 
+#appRoot>.dark-theme div[id^="ms-searchux-popup"] button[class^="submitSuggestion"],
 #appRoot>.dark-theme div[id^="ms-searchux-popup"] {
     background-color: #1B1B1D;
     color: #EFF0F1;
@@ -30,7 +30,7 @@
 }
 #appRoot>.dark-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal),
 #appRoot>.dark-theme p,
-#appRoot>.dark-theme i:not([data-icon-name]),
+#appRoot>.dark-theme i:not(i[data-icon-name="Page"]),
 #appRoot>.dark-theme b,
 #appRoot>.dark-theme h1,
 #appRoot>.dark-theme h2,
@@ -96,13 +96,41 @@
 #appRoot>.dark-theme .ms-OverflowSet.ms-CommandBar-primaryCommand {
     background-color: #242526 !important;
 }
-/* === light theme css === */
+/* #appRoot>.dark-theme .ms-DetailsList.ms-DetailsList--Compact,
+#appRoot>.dark-theme .ms-FocusZone.ms-DetailsHeader {
+    border: 0;
+} */
+#appRoot>.dark-theme .ms-TooltipHost {
+    background-color: #242526;
+}
+#appRoot>.dark-theme .ms-FocusZone.ms-DetailsHeader,
+#appRoot>.dark-theme .ms-DetailsHeader-cellTitle
+/* #appRoot>.dark-theme div[role="row"]  */
+{
+    background-color: #242526;
+    color: #EEE;
+}
+#appRoot>.dark-theme .ms-FocusZone.ms-DetailsRow {
+    background-color: #242526;
+    color: #EEE;
+    box-shadow: none;
+}
+#appRoot>.dark-theme .ms-FocusZone.ms-DetailsRow:hover::before,
+#appRoot>.dark-theme .ms-FocusZone.ms-DetailsRow.is-selected::before {
+    background-color: #505151 !important;
+}
+#appRoot>.dark-theme .ms-Link {
+    color: #EEE;
+}
+/* ------------------------------------------------------------------------------------------------- */
+/* ======================================== LIGHT THEME CSS ======================================== */
+/* ------------------------------------------------------------------------------------------------- */
 #appRoot>.light-theme {
     background: initial;
 }
 #appRoot>.light-theme span:not(.ms-FolderCover-metadata):not(.ms-FolderCover-signal):not(span[class^="itemActivity"]),
 #appRoot>.light-theme p,
-#appRoot>.light-theme i:not([data-icon-name]),
+#appRoot>.light-theme i,
 #appRoot>.light-theme b,
 #appRoot>.light-theme h1,
 #appRoot>.light-theme h2,
