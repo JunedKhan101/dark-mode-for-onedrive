@@ -60,11 +60,11 @@
     filter: invert(0%);
 }
 #appRoot>.dark-theme [class^='navLink_']:hover [class^='navLinkInner_'] {
-    background-color: #1B1B1D;
+    background-color: #505151;
     color: #EEE;
 }
 #appRoot>.dark-theme button.ms-Button:hover {
-    background-color: #1B1B1D;
+    background-color: #505151;
     color: #EEE;
 }
 #appRoot>.dark-theme button.ms-Button i.ms-Icon.ms-Button-menuIcon,
@@ -96,10 +96,6 @@
 #appRoot>.dark-theme .ms-OverflowSet.ms-CommandBar-primaryCommand {
     background-color: #242526 !important;
 }
-/* #appRoot>.dark-theme .ms-DetailsList.ms-DetailsList--Compact,
-#appRoot>.dark-theme .ms-FocusZone.ms-DetailsHeader {
-    border: 0;
-} */
 #appRoot>.dark-theme .ms-TooltipHost {
     background-color: #242526;
 }
@@ -120,6 +116,58 @@
     background-color: #505151 !important;
 }
 #appRoot>.dark-theme .ms-Link {
+    color: #EEE;
+}
+/* User Popup */
+#appRoot>.dark-theme .mectrl_currentAccount,
+#appRoot>.dark-theme .mectrl_scrollShadow.mectrl_accountList_container {
+    background: #1B1B1D;
+    color: #EEE;
+}
+#appRoot>.dark-theme #mectrl_body_signOut {
+    background: #1B1B1D;
+}
+#appRoot>.dark-theme div[id*="_HeaderRightRegion"]:hover,
+#appRoot>.dark-theme button[id*="_MainLink_Me"]:hover,
+#appRoot>.dark-theme button[id*="_MainLink_Me"][class*="activeButton"],
+#appRoot>.dark-theme button[id*="_MainLink_Help"]:hover,
+#appRoot>.dark-theme button[id*="_MainLink_Help"][class*="activeButton"],
+#appRoot>.dark-theme button[id*="_MainLink_Settings"]:hover,
+#appRoot>.dark-theme button[id*="_MainLink_Settings"][class*="activeButton"],
+#appRoot>.dark-theme button[id*="_HeaderDiamond"]:hover,
+#appRoot>.dark-theme button[id*="_HeaderDiamond"][class*="activeButton"],
+#appRoot>.dark-theme button[id*="_MainLink_NavMenu"]:hover,
+#appRoot>.dark-theme button[id*="_MainLink_NavMenu"][class*="activeButton"],
+#appRoot>.dark-theme #mectrl_body_signOut:hover,
+#appRoot[data-theme="dark"] ~ #appLauncher button[id*="_AppTile_"]:hover {
+    background: #505151;
+}
+/* app launcher */
+#appRoot[data-theme="dark"] ~ #appLauncher div[class*="neutral-foreground-background"],
+#appRoot[data-theme="dark"] ~ #appLauncher button[id*="intentTile_"],
+#appRoot[data-theme="dark"] ~ #appLauncher #appLauncherSearchWrapper {
+    background-color: #1B1B1D;
+}
+#appRoot[data-theme="dark"] ~ #appLauncher button[id*="intentTile_"]:hover  {
+    background-color: #505151;
+}
+#appRoot[data-theme="dark"] ~ #appLauncher div[class*="neutral-dark-font"],
+#appRoot[data-theme="dark"] ~ #appLauncher span[class*="neutral-dark-font"] {
+    color: #EEE;
+}
+/* static image */
+#appRoot>.dark-theme a[class*="tileViewport_"],
+#appRoot>.dark-theme img[class*="staticCardImage_"] {
+    background-color: #242526;;
+}
+/* Image tile text */
+#appRoot>.dark-theme span[class*="itemActivityTitle_"],
+#appRoot>.dark-theme span[class*="itemActivitySubTitle_"] {
+    color: #EEE !important;
+}
+/* Premium button */
+#appRoot>.dark-theme button[class*="getMoreStorageButton_"] {
+    background-color: #505151;
     color: #EEE;
 }
 /* ------------------------------------------------------------------------------------------------- */
