@@ -141,6 +141,8 @@
 #appRoot>.dark-theme button[id*="_HeaderDiamond"][class*="activeButton"],
 #appRoot>.dark-theme button[id*="_MainLink_NavMenu"]:hover,
 #appRoot>.dark-theme button[id*="_MainLink_NavMenu"][class*="activeButton"],
+#appRoot>.dark-theme button#GiveFeedbackButton:hover,
+#appRoot>.dark-theme button#GiveFeedbackButton[class*="activeButton"],
 #appRoot>.dark-theme #mectrl_body_signOut:hover,
 #appRoot[data-theme="dark"] ~ #appLauncher button[id*="_AppTile_"]:hover {
     background: #505151;
@@ -183,6 +185,47 @@
 #appRoot>.dark-theme div[class*="carouselTopNav_"],
 #appRoot>.dark-theme button[class*="navButton_"] {
     background: #242526;
+}
+/* Help section */
+html[data-theme="dark"] #f1Asset,
+html[data-theme="dark"] #f1Body,
+html[data-theme="dark"] #helpPaneFull,
+html[data-theme="dark"] #ocClientSearch,
+html[data-theme="dark"] .supCont.ocClient.fluent.olwac,
+html[data-theme="dark"] .ocSearchIFrameDiv.olwac,
+html[data-theme="dark"] #ocSearchNav {
+    background-color: #1B1B1D;
+    color: #EEE;
+}
+html[data-theme="dark"] .icon-arrow-back,
+html[data-theme="dark"] .icon-home.icon-home-top,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] p {
+    color: #EEE !important;
+}
+html[data-theme="dark"] a {
+    color: lightblue !important;
+}
+/* Feedback section */
+#appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback div[class*="defaultContainer"] {
+    background: #1B1B1D;
+}
+#appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback label,
+#appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback span:not(.ms-Button-flexContainer),
+#appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback i[data-icon-name="InAppFeedbackCheckmark"] {
+    color: #EEE;
+}
+#appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback .ms-Checkbox-checkbox {
+    border: 1px solid #eee;
+}
+#appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback button {
+    background: #505151;
+}
+#appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback button:hover {
+    background: #737777;
+}
+#appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback #textarea[id*="TextField"] {
+    background: #505151;
 }
 /* ------------------------------------------------------------------------------------------------- */
 /* ======================================== LIGHT THEME CSS ======================================== */
