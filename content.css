@@ -227,6 +227,44 @@ html[data-theme="dark"] a {
 #appRoot[data-theme="dark"] ~ #FlexPane_Overflow_Container #FlexPane_Feedback #textarea[id*="TextField"] {
     background: #505151;
 }
+/* recent page */
+#appRoot[data-theme="dark"] button[class*="filterButton"][class*="allFilterPivot"],
+#appRoot[data-theme="dark"] div[class*="headerRow_"],
+#appRoot[data-theme="dark"] div[id*="virtualized-list_"][class*="row_"],
+#appRoot[data-theme="dark"] div#odList {
+    background: #242526;
+}
+#appRoot[data-theme="dark"] div[id*="virtualized-list_"][class*="row_"]:hover {
+    --od3-background-inset-color: none;
+    /* --od3-row-divider-inset-gradient-direction: none; */
+    --od3-row-divider-inset-color: none;
+    --od3-row-selected-background-color: none;
+    --od3-row-selected-hover-background-color: none;
+    background: #505151;
+}
+#appRoot[data-theme="dark"] div[class*="nameCellDisplay_"],
+#appRoot[data-theme="dark"] button[class*="nameCellTop_"],
+#appRoot[data-theme="dark"] div[class*="odsp-spartan-cell"] {
+    color: #EEE;
+}
+#appRoot[data-theme="dark"] button[class*="filterButton"][class*="allFilterPivot"]:hover {
+    background: #505151;
+}
+#appRoot[data-theme="dark"] div[class*="heroCommands_"] button {
+    background: #737777;
+    color: #EEE;
+}
+#appRoot[data-theme="dark"] ~ .fui-FluentProvider .fui-MenuItem {
+    background: #1B1B1D;
+    color: #EEE;
+}
+#appRoot[data-theme="dark"] ~ .fui-FluentProvider .fui-MenuItem:hover {
+    background: #505151;
+    color: #EEE;
+}
+#appRoot[data-theme="dark"] ~ .fui-FluentProvider .fui-MenuPopover {
+    background: #1B1B1D;
+}
 /* ------------------------------------------------------------------------------------------------- */
 /* ======================================== LIGHT THEME CSS ======================================== */
 /* ------------------------------------------------------------------------------------------------- */
