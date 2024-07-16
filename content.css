@@ -1,6 +1,12 @@
 #appRoot>.dark-theme {
     background: #242526;
 }
+html[data-theme="dark"] {
+    background: #242526;
+}
+html[data-theme="dark"] body {
+    background: #242526;
+}
 /* search form */
 #appRoot>.dark-theme .ms-suiteux-search-box,
 #appRoot>.dark-theme button[class^="submitSearchButton"] {
@@ -197,7 +203,18 @@ html[data-theme="dark"] #ocSearchNav {
     background-color: #1B1B1D;
     color: #EEE;
 }
+html[data-theme="dark"] #inAppQuickAnswers .card,
+html[data-theme="dark"] #inAppQuickAnswers .cardHeaderSection,
+html[data-theme="dark"] #inAppQuickAnswers .cardHeader.inline {
+    background: #505151;
+    color: #EEE;
+}
+html[data-theme="dark"] #ocSearchBox {
+    color: black;
+}
+
 html[data-theme="dark"] .icon-arrow-back,
+html[data-theme="dark"] .solutionIcon,
 html[data-theme="dark"] .icon-home.icon-home-top,
 html[data-theme="dark"] h2,
 html[data-theme="dark"] p {
