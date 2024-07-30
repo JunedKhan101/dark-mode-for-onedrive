@@ -264,7 +264,9 @@ html[data-theme="dark"] a {
 #appRoot[data-theme="dark"] div[class*="odsp-spartan-cell"] {
     color: #EEE;
 }
-#appRoot[data-theme="dark"] button[class*="filterButton"][class*="allFilterPivot"]:hover {
+#appRoot[data-theme="dark"] button[class*="filterButton"][class*="allFilterPivot"]:hover,
+html[data-theme="dark"] #f1NavBack:hover,
+html[data-theme="dark"] #f1NavHome:hover {
     background: #505151;
 }
 #appRoot[data-theme="dark"] div[class*="heroCommands_"] button {
